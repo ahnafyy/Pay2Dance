@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "deploy": "npm run build && next export -o docs/"
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "author": "Ahnaf Prio <ahnaf@halicon.io> (http://www.ahnafy.com/)",
   "dependencies": {
@@ -13,6 +13,7 @@
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.8.0",
     "axios": "^0.21.2",
+    "gh-pages": "^4.0.0",
     "next": "^11.1.3",
     "react": "^18.2.0",
     "react-confetti": "^5.1.0",
