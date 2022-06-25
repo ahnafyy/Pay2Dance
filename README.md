@@ -40,7 +40,7 @@ SECRET_KEY=sk_test********
 
 ## Is this [PCI Compliant](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) ?
 
-Absolutely! 
+Absolutely!
 
 The website is hosted on a secure channel and payment information is not stored anywhere except for the Stripe hosted input box that millions of users use and trust all around the world. Stripe's standard security practices can be found [here](https://stripe.com/docs/security/stripe)!
 
@@ -66,7 +66,7 @@ Run this to run the app locally on a dev server
 npm run dev
 ```
 
-Run this to generate a production build of the app generated at the `docs` directory
+Run this to generate a production build of the app deployed on gh-pages branch!
 
 ```bash
 npm run deploy

@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.pay2.dance' > ./out/CNAME",
+    "githubPages": "gh-pages -d out -t true",
+    "deploy": "npm run static && npm run githubPages"
   },
   "author": "Ahnaf Prio <ahnaf@halicon.io> (http://www.ahnafy.com/)",
   "dependencies": {
