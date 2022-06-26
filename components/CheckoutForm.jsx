@@ -59,7 +59,7 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
 
     /* Add studio name as meta data. */
     const metaData = {
-      studioName: ev.target.studio.value,
+      studioName: ev.target.Studio.value,
     }
 
     /* Setting the state of the component to true. */
