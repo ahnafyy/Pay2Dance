@@ -45,7 +45,10 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
   const handleFormSubmit = async ev => {
     ev.preventDefault();
 
-  /* Creating an object with the billing details. */
+    alert("Hi 👋! This is the part we would send you the payment! To get a production ready version of the app contact 📧 ahnaf@halicon.io");
+    return;
+
+    /* Creating an object with the billing details. */
     const billingDetails = {
       name: ev.target.name.value,
       email: ev.target.email.value,
@@ -165,7 +168,7 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
       {checkoutError && <CheckoutError>{checkoutError}</CheckoutError>}
       <Row>
         <SubmitButton disabled={isProcessing || !stripe}>
-          {isProcessing ? "Processing..." : `Pay $${price}`}
+          {isProcessing ? "Processing..." : `Pay`}
         </SubmitButton>
       </Row>
     </form>

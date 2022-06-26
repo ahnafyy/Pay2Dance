@@ -61,9 +61,6 @@ const DancePackage = ({ onAddDancePackage, onRemoveDancePackage, numberOfDancePa
   return (
     <Shop>
       <ShopName>🕺 Pay 2 Dance 💃</ShopName>
-      <DemoDebitCardDetails>
-        For demo use 4242 4242 4242 4242 for debit card to not be charged and pass validations.
-        </DemoDebitCardDetails>
       <Image src="./DancePackage.png" width="100px"></Image>
       <Controls>
         <DancePackageQuantity
